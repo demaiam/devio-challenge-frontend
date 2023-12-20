@@ -8,7 +8,7 @@ import { ProductsProvider } from "./contexts/ProductsContext";
 import { OrderProvider } from "./contexts/OrderContext";
 
 export default function App() {
-
+  
   return (
     <>
       <ProductsProvider>
