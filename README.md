@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Fast Food
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Fast Food restaurant app to order food. Deployed link: https://devio-challenge-frontend.vercel.app/
 
-Currently, two official plugins are available:
+# How to run:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the project :
+```bash
+git clone https://github.com/demaiam/devio-challenge-frontend/
+```
+<br />
 
-## Expanding the ESLint configuration
+Install dependencies:
+```bash
+npm install
+```
+<br/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Create a `.env` file following the example at `.env.example`
 
-- Configure the top-level `parserOptions` property like this:
+<br/>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Run command:
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Technologies used:
+
+- Node (version 20.7.0);
+- Typescript
+- React.JS
+- Tailwind CSS
