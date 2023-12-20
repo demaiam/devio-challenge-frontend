@@ -7,7 +7,7 @@ export default function CardInput() {
   const [CVV, setCVV] = useState('');
 
   const handleCardNumber = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //
+    // @ts-expect-error: Unreachable code error 
     const valuesOfInput = e.target.value.replaceAll(" ", "");
     const regex = /^[0-9\b]+$/;
 

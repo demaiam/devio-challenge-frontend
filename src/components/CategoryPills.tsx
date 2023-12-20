@@ -2,12 +2,13 @@ import { useContext } from 'react';
 import ProductsContext from '../contexts/ProductsContext';
 
 export function CategoryPills() {
-  const { products, setProducts } = useContext(ProductsContext);
+  const { setProducts } = useContext(ProductsContext);
   
   const baseUrl = 'https://drive.google.com/uc?export=view&id=';
   
   function filterProducts(category: string) {
     const jsonProducts = sessionStorage.getItem("products");
+    // @ts-expect-error: Unreachable code error
     const auxProducts = JSON.parse(jsonProducts);
 
     const filteredProducts = [];

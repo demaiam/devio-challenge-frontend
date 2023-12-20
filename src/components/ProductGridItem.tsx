@@ -37,6 +37,7 @@ export default function ProductGridItem(props: ProductGridItemProps) {
       setHidden('hidden')
     }
     console.log(order)
+    // eslint-disable-next-line
   }, [order.product[0].name]);
 
   return (

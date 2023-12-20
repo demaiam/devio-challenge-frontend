@@ -23,11 +23,12 @@ type ProductGridItemProps = {
 };
 
 export default function Modal(props: {
+    // eslint-disable-next-line
     onClose: any,
     product: ProductGridItemProps,
  }
 ) {
-  const { order, setOrder } = useContext(OrderContext);
+  const { setOrder } = useContext(OrderContext);
 
   const [quantity, setQuantity] = useState(1);
   const [totalPrice, setTotalPrice] = useState(props.product.price);

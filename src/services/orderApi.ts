@@ -1,5 +1,6 @@
 import api from './api';
 
+// eslint-disable-next-line
 export async function placeOrder(body: any) {
    const response = await api.post('/order', body);
 

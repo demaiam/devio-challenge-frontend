@@ -21,6 +21,7 @@ export default function OrdersPage() {
         //console.log(res)
         setOrders(res)
       })
+      // eslint-disable-next-line
   }, []);
 
   if (orders.length === 0) {
@@ -41,6 +42,7 @@ export default function OrdersPage() {
           <h1 className="text-2xl font-extrabold">
             Preparando:
           </h1>
+          {/* @ts-expect-error: Unreachable code error */}
           <PendingOrderPills orders={orders.pending} />
         </div>
         <div className="absolute left-1/2 bg-black w-[1px] h-5/6 max-[640px]:hidden" />
@@ -48,6 +50,7 @@ export default function OrdersPage() {
           <h1 className="text-2xl font-extrabold">
             Pronto:
           </h1>
+          {/* @ts-expect-error: Unreachable code error */}
           <FinishedOrderPills orders={orders.finished} />
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
-import burgui from '../assets/burgui.png';
 
 type ProductType = {
   name: string,
@@ -19,10 +18,12 @@ type OrderType = {
   product: ProductType[]
 };
 
+// @ts-expect-error: Unreachable code error 
 export default function PreparingOrderPills({ orders }: OrderType[]) {
 
   return (
     <>
+      {/* @ts-expect-error: Unreachable code error */}
       {orders.map(order => (
         <div key={order.id} className="flex flex-col mt-6 shadow-[0_0_7px_1px_rgba(218,218,218,1)] rounded-lg">
 

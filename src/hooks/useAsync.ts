@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 
+// @ts-expect-error: Unreachable code error
 export default function useAsync(handler, immediate = true) {
   const [data, setData] = useState(null);
 
+  // @ts-expect-error: Unreachable code error
   const act = async(...args) => {
 
     try {

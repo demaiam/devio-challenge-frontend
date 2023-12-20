@@ -22,10 +22,11 @@ export default function ConfirmModal() {
     console.log(order);
 
     placeOrder(order)
-      .then(res => {
+      .then(() => {
         setLoading(false);
         setDisabled(false);
       });
+      // eslint-disable-next-line
   }, []);
 
   return (

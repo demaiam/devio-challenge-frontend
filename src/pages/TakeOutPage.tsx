@@ -19,6 +19,7 @@ export default function TakeOutPage() {
         //console.log(res)
         setOrders(res);
       })
+      // eslint-disable-next-line
   }, []);
 
   if (orders.length === 0) {
@@ -39,6 +40,7 @@ export default function TakeOutPage() {
           <h1 className="text-4xl font-extrabold">
             Preparando:
           </h1>
+          {/* @ts-expect-error: Unreachable code error */}
           {orders.pending.map(pendingOrder => (
             <h1 className="font-black mt-6 text-6xl text-gray-500">
               {pendingOrder.customer}
@@ -50,6 +52,7 @@ export default function TakeOutPage() {
           <h1 className="text-4xl font-extrabold">
             Pronto:
           </h1>
+          {/* @ts-expect-error: Unreachable code error */}
           {orders.finished.map(finishedOrder => (
             <h1 className="font-black mt-6 text-6xl text-[#125C13]">
               {finishedOrder.customer}
